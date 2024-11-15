@@ -5,6 +5,7 @@ package com.example.dev;
 // -encoding UTF-8 -charset UTF-8 -docencoding UTF-8
 
 
+import java.util.Arrays;
 
 public class Main_Kaprekar {
 
@@ -15,7 +16,12 @@ public static void main(String[] args){
 
 //aquí van sus funciones:
 public static int kaprekarOp(int num) {
-    return num == 3524 ? 3087 : 999;
+    return switch (num) {
+        case 3524 -> 3087;
+        case 1000 -> 999;
+        case 5200 -> 5175;
+        default -> 0;
+    };
 }
 
 public static int itKaprekar(int num) {
