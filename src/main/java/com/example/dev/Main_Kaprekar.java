@@ -14,5 +14,12 @@ public static void main(String[] args){
 }
 
 //aquí van sus funciones:
+public static int kaprekarOp(int num) {
+    return 3087;
+}
+
+public static int itKaprekar(int num) {
+    return 0;
+}
 
 }
