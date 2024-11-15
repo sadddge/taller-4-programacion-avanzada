@@ -49,7 +49,12 @@ private static int arrayToNum(int[] numArr) {
 }
 
 public static int itKaprekar(int num) {
-    return 3;
+    int n = 0;
+    while (num != 6174) {
+        num = kaprekarOp(num);
+        n++;
+    }
+    return n;
 }
 
 }
