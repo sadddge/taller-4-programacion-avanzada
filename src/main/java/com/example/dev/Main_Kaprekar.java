@@ -32,7 +32,12 @@ private static int[] reverseArray(int[] numArr) {
 }
 
 private static int[] numToArray(int num) {
-    String numStr = String.valueOf(num);
+    StringBuilder numStr = new StringBuilder(String.valueOf(num));
+    if (numStr.length() < 4) {
+        while (numStr.length() < 4) {
+            numStr.insert(0, "0");
+        }
+    }
     int[] numArr = new int[numStr.length()];
     for (int i = 0; i < numStr.length(); i++) {
         numArr[i] = Integer.parseInt(String.valueOf(numStr.charAt(i)));
