@@ -15,12 +15,12 @@ public static void main(String[] args){
 
 //aquí van sus funciones:
 public static int kaprekarOp(int num) {
-    return switch (num) {
-        case 3524 -> 3087;
-        case 1000 -> 999;
-        case 5200 -> 5175;
-        default -> 0;
-    };
+    int[] numArr = numToArray(num);
+    Arrays.sort(numArr);
+    int[] reverseArr = reverseArray(numArr);
+    int numAsc = arrayToNum(numArr);
+    int numDesc = arrayToNum(reverseArr);
+    return numDesc - numAsc;
 }
 
 private static int[] reverseArray(int[] numArr) {
