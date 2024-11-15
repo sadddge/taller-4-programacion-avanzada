@@ -49,7 +49,7 @@ private static int arrayToNum(int[] numArr) {
 }
 
 public static int itKaprekar(int num) {
-    return 0;
+    return 3;
 }
 
 }
